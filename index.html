@@ -93,7 +93,41 @@
                 </nav>
 
                 <!-- Header width search -->
-                <div class="header-width-search">
+                <div class="header-with-search">
+                    <div class="header__mobile-icon">
+                        <label for="mobile-menu-checkbox" class="header__mobile-menu">
+                            <i class="ti-menu header__mobile-menu-icon"></i>
+                        </label>
+    
+                        <label for="mobile-search-checkbox" class="header__mobile-search">
+                            <i class="ti-search header__mobile-search-icon"></i>
+                        </label>
+                    </div>
+
+                    <input type="checkbox" hidden id="mobile-menu-checkbox" class="header__menu-checkbox">
+
+                    <label for="mobile-menu-checkbox" class="header__mobile-overlay"></label>
+
+                    <div class="mobile-menu">
+                        <ul class="mobile-menu-list">
+                            <li class="mobile-menu-item">
+                                <a href="" class="mobile-menu-link">Trang chủ</a>
+                            </li>
+                            <li class="mobile-menu-item">
+                                <a href="" class="mobile-menu-link">Cài đặt</a>
+                            </li>
+                            <li class="mobile-menu-item">
+                                <a href="" class="mobile-menu-link">Đăng ký</a>
+                            </li>
+                            <li class="mobile-menu-item">
+                                <a href="" class="mobile-menu-link">Đăng nhập</a>
+                            </li>
+                            <li class="mobile-menu-item">
+                                <a href="" class="mobile-menu-link">Chăm sóc khách hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+
                     <div class="header__logo hide-on-tablet">
                         <a href="/" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-img">
@@ -108,7 +142,7 @@
 
                     <div class="space"></div>
 
-                    <div class="header__search">
+                    <div class="header__search hide-on-mobile">
                         <div class="header__search-input-wrap">
                             <input type="text" class="header__search-input" placeholder="Tìm trong Shop này">
 
@@ -168,7 +202,7 @@
                 <li class="header__sort-item">
                     <a href="" class="header__sort-link">Liên quan</a>
                 </li>
-                <li class="header__sort-item">
+                <li class="header__sort-item header__sort-item--active">
                     <a href="" class="header__sort-link">Mới nhất</a>
                 </li>
                 <li class="header__sort-item">
@@ -177,10 +211,10 @@
                 <li class="header__sort-item">
                     <a href="" class="header__sort-link">
                         Giá
-                        <div class="header__sort-control">
+                        <!-- <div class="header__sort-control">
                             <i class="header__sort-icon ti-angle-up"></i>
                             <i class="header__sort-icon ti-angle-down"></i>
-                        </div>
+                        </div> -->
                     </a>
                 </li>
             </ul>
