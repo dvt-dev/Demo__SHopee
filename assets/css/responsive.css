@@ -112,6 +112,11 @@
 
     .header__search-input-wrap {
         margin-right: -38px;
+        flex: none;
+    }
+
+    .header__search-btn {
+        margin-left: 10px;
     }
     
     .header__search-history {
