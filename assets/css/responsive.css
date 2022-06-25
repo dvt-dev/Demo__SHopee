@@ -109,6 +109,10 @@
         display: flex;
         z-index: 1;
     }
+
+    .header__search-input-wrap {
+        margin-right: -38px;
+    }
     
     .header__search-history {
         position: fixed;
