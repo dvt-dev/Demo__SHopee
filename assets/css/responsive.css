@@ -162,7 +162,8 @@
         padding: 0 8px;
     }
 
-    .footer {
+    .footer-content,
+    .footer-bottom {
         padding: 0 16px;
     }
     
