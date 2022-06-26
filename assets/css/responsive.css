@@ -61,10 +61,6 @@
         margin-top: 16px;
     }
 
-    .footer__policy {
-        /* text-align: left; */
-    }
-
     .footer__policy-item {
         border: 0;
     }
@@ -136,7 +132,7 @@
 
     .header__search-input-wrap {
         margin-right: -38px;
-        flex: none;
+        flex: unset;
     }
 
     .header__search-btn {
