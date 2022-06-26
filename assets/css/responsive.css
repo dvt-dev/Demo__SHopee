@@ -131,7 +131,7 @@
     }
 
     .header__search-input-wrap {
-        margin-right: -38px;
+        width: 160px;
         flex: unset;
     }
 
