@@ -801,7 +801,7 @@
     position: absolute;
     top: 50%;
     left: 0;
-    height: 60%;
+    height: 50%;
     border-left: 1px solid #e5e5e5;
     transform: translateY(-50%);
 }
