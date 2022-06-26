@@ -38,15 +38,35 @@
 
     .app__container {
         margin-top: calc(var(--header-height) + var(--header-sort-bar-height));
+        padding-top: 0;
     }
 
     .header-width-search {
         padding: 0;
     }
 
-
     .breadcrumb {
         display: none;
+    }
+
+    .mobile-category {
+        display: block;
+    }
+
+    .footer-location {
+        display: none;
+    }
+
+    .footer-bottom {
+        margin-top: 16px;
+    }
+
+    .footer__policy {
+        /* text-align: left; */
+    }
+
+    .footer__policy-item {
+        border: 0;
     }
 }
 
@@ -88,6 +108,10 @@
     .header__logo,
     .header__cart {
         width: unset;
+    }
+
+    .header__logo-img {
+        width: 120px;
     }
 
     .header__search {
@@ -138,9 +162,8 @@
         padding: 0 8px;
     }
 
-
-    .footer-location {
-        flex-wrap: wrap;
+    .footer {
+        padding: 0 16px;
     }
     
     @keyframes MobileSearchSideIn {

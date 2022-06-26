@@ -521,17 +521,18 @@
     justify-content: flex-end;
 }
 
+.header__cart-wrap {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-tap-highlight-color: transparent;
+}
 
 .header__cart-icon {
     margin-top: 3px;
     padding-right: 8px;
     color: var(--white-color);
     font-size: 2.2rem;
-}
-
-.header__cart-wrap {
-    position: relative;
-    cursor: pointer;
 }
 
 .header__cart-wrap:hover .header__cart-list {
@@ -880,6 +881,61 @@
 .category-item__link:hover {
     right: -4px;
     color: var(--primary-color);
+}
+
+/* Mobile Category */
+.mobile-category {
+    display: none;
+}
+
+.mobile-category__list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 16px 0;
+}
+
+.mobile-category__list::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-category__item {
+    flex-shrink: 0;
+    width: 90px;
+    height: 32px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.mobile-category__item:nth-child(3n + 1) {
+    background-color: #87afd8;
+}
+
+.mobile-category__item:nth-child(3n + 2) {
+    background-color: #76c9bd;
+}
+
+.mobile-category__item:nth-child(3n + 3) {
+    background-color: #88cf81;
+}
+
+.mobile-category__item:last-child {
+    margin-right: 0;
+}
+
+.mobile-category__link {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 350;
+    text-align: center;
+    display: block;
+    line-height: 32px;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* Home */
@@ -1235,8 +1291,9 @@ i.home-product-item__like-icon-fill {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin-left: 60px;
-    /* line-height: 4px; */
+    list-style: none;
+    margin: 0 0 0 60px;
+    padding-left: 0;
 }
 
 .footer-location__heading {
@@ -1260,11 +1317,14 @@ i.home-product-item__like-icon-fill {
 
 .footer__policy {
     padding: 40px 0;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
-.footer__policy-item:not(:last-child) {
+.footer__policy-item {
+    margin-top: 20px;
+}
+
+.footer__policy-item {
     border-right: 1px solid rgba(0, 0, 0, .2);
 }
 
@@ -1273,7 +1333,6 @@ i.home-product-item__like-icon-fill {
     text-transform: uppercase;
     font-size: 1.2rem;
     color: #707070;
-    padding: 0 20px;
 }
 
 .footer__certification {
