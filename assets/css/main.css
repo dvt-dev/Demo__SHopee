@@ -902,6 +902,9 @@
 }
 
 .mobile-category__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 0;
     width: 90px;
     height: 32px;
